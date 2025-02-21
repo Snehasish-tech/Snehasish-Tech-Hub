@@ -1,2 +1,2 @@
-# Snehasishdey02
-This is my repository
+# Snehasish-Tech-Hub
+This is my first Git Repository
