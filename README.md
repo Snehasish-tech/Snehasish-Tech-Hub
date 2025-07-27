@@ -1,2 +1,2 @@
-# Snehasish-tech-Hub
+# Snehasish-First-Repo
 This is my first Git Repository
