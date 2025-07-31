@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marku - Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marku</h1>
+            <p>Your Grade Results</p>
+        </header>
+
+        <main>
+            <div class="results-container">
+                <h2>Results Summary</h2>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3>SGPA</h3>
+                        <div class="result-value" id="sgpaValue">0.00</div>
+                        <p class="result-label">Semester Grade Point Average</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>CGPA</h3>
+                        <div class="result-value" id="cgpaValue">0.00</div>
+                        <p class="result-label">Cumulative Grade Point Average</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Percentage</h3>
+                        <div class="result-value" id="percentageValue">0.00%</div>
+                        <p class="result-label">Equivalent Percentage</p>
+                    </div>
+                </div>
+
+                <div class="subjects-summary">
+                    <h3>Subject Details</h3>
+                    <div class="subjects-table">
+                        <table id="resultsTable">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Credits</th>
+                                    <th>Grade</th>
+                                    <th>Grade Points</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsTableBody">
+                                <!-- Subject rows will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button onclick="window.location.href='index.html'" class="btn-primary">Add More Subjects</button>
+                    <button onclick="downloadResults()" class="btn-secondary">Download Results</button>
+                    <button onclick="clearAllData()" class="btn-danger">Clear All Data</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load and display results when page loads
+        window.addEventListener('DOMContentLoaded', loadResults);
+    </script>
+</body>
+</html>
