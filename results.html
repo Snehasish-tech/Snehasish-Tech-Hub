@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marku - Results Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marku</h1>
+            <p>Results Summary</p>
+        </header>
+
+        <main>
+            <div class="back-button">
+                <a href="index.html" class="btn-back">← Back to Calculator</a>
+            </div>
+
+            <div class="results-summary">
+                <h2>Academic Performance Summary</h2>
+                
+                <div class="main-results">
+                    <div class="result-highlight">
+                        <div class="result-item">
+                            <h3>SGPA</h3>
+                            <p id="finalSgpa">0.00</p>
+                        </div>
+                        <div class="result-item">
+                            <h3>CGPA</h3>
+                            <p id="finalCgpa">0.00</p>
+                        </div>
+                        <div class="result-item">
+                            <h3>Percentage</h3>
+                            <p id="finalPercentage">0.00%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subjects-table">
+                    <h3>Subject-wise Breakdown</h3>
+                    <div class="table-container">
+                        <table id="subjectsTable">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Credits</th>
+                                    <th>Grade</th>
+                                    <th>Grade Points</th>
+                                    <th>Total Points</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subjectsTableBody">
+                                <!-- Subjects will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="calculation-details">
+                    <h3>Calculation Details</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h4>Total Credits</h4>
+                            <p id="totalCredits">0</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Total Grade Points</h4>
+                            <p id="totalGradePoints">0</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>SGPA Formula</h4>
+                            <p>Total Grade Points ÷ Total Credits</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Percentage Formula</h4>
+                            <p>SGPA × 10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grade-scale">
+                    <h3>Grade Scale Reference</h3>
+                    <div class="grade-grid">
+                        <div class="grade-item">
+                            <span class="grade-letter">O</span>
+                            <span class="grade-points">10</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">A+</span>
+                            <span class="grade-points">9</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">A</span>
+                            <span class="grade-points">8</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">B+</span>
+                            <span class="grade-points">7</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">B</span>
+                            <span class="grade-points">6</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">C</span>
+                            <span class="grade-points">5</span>
+                        </div>
+                        <div class="grade-item">
+                            <span class="grade-letter">F</span>
+                            <span class="grade-points">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="results.js"></script>
+</body>
+</html>

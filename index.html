@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marku - Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marku</h1>
+            <p>Grade Calculator & GPA Tracker</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>Add Subject Details</h2>
+                <form id="gradeForm">
+                    <div class="form-group">
+                        <label for="subjectName">Subject Name:</label>
+                        <input type="text" id="subjectName" name="subjectName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="credits">Credits:</label>
+                        <input type="number" id="credits" name="credits" min="1" max="10" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade">Grade:</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="10">O (10)</option>
+                            <option value="9">A+ (9)</option>
+                            <option value="8">A (8)</option>
+                            <option value="7">B+ (7)</option>
+                            <option value="6">B (6)</option>
+                            <option value="5">C (5)</option>
+                            <option value="0">F (0)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Add Subject</button>
+                </form>
+            </div>
+
+            <div class="subjects-list">
+                <h3>Added Subjects</h3>
+                <div id="subjectsList" class="subjects-container">
+                    <p class="no-subjects">No subjects added yet</p>
+                </div>
+            </div>
+
+            <div class="results-preview">
+                <h3>Current Results</h3>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h4>SGPA</h4>
+                        <p id="sgpa">0.00</p>
+                    </div>
+                    <div class="result-card">
+                        <h4>CGPA</h4>
+                        <p id="cgpa">0.00</p>
+                    </div>
+                    <div class="result-card">
+                        <h4>Percentage</h4>
+                        <p id="percentage">0.00%</p>
+                    </div>
+                </div>
+                <button id="viewResults" class="btn-secondary" disabled>View Detailed Results</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
